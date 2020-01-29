@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a20b27d70e273a94583443a86efeb266
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - col: {instanceID: 0}
+  - timerText: {instanceID: 0}
+  - redBoxExp: {instanceID: 0}
+  - playerMat: {instanceID: 0}
+  - standard: {fileID: 2100000, guid: 8017ba10432803443a40aae06578c86a, type: 2}
+  - red: {fileID: 2100000, guid: 96ed85fb762ed6144bd37a3043863cab, type: 2}
+  - yellow: {fileID: 2100000, guid: 1cd455e8efb045b49917b9efc1d26098, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
