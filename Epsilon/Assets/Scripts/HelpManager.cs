@@ -13,6 +13,8 @@ public class HelpManager : MonoBehaviour
     public GameObject endBox;
     public GameObject activeObj;
     public GameObject timerText;
+    public GameObject yellowPlayer;
+    public GameObject movementObjects;
     public Text explanationText;
 
     public void JumpBox()
@@ -57,6 +59,24 @@ public class HelpManager : MonoBehaviour
         activeObj = timerText;
         explanationText.text = ("The timer shows how long your current run has taken." +
             "It resets every time you die!");
+    }
+
+    public void YellowPlayer()
+    {
+        activeObj.SetActive(false);
+        yellowPlayer.SetActive(true);
+        activeObj = yellowPlayer;
+        explanationText.text = ("You can unlock new skins by completing levels in certain times. " +
+            "Equip these skins from the Unlocks menu.");
+    }
+
+    public void Movement()
+    {
+        activeObj.SetActive(false);
+        movementObjects.SetActive(true);
+        activeObj = movementObjects;
+        explanationText.text = ("Epsilon works with a physics system. Your character " +
+            "has momentum and weight; use this to your advantage!");
     }
 
     public void Return()
