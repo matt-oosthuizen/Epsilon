@@ -55,8 +55,8 @@ public class HelpManager : MonoBehaviour
     public void TimerText()
     {
         activeObj.SetActive(false);
-        timerText.SetActive(true);
-        activeObj = timerText;
+        player.SetActive(true);
+        activeObj = player;
         explanationText.text = ("The timer shows how long your current run has taken." +
             "It resets every time you die!");
     }
@@ -77,6 +77,32 @@ public class HelpManager : MonoBehaviour
         activeObj = movementObjects;
         explanationText.text = ("Epsilon works with a physics system. Your character " +
             "has momentum and weight; use this to your advantage!");
+    }
+
+    public void SpeedRun()
+    {
+        activeObj.SetActive(false);
+        player.SetActive(true);
+        activeObj = player;
+        explanationText.text = ("Finding less obvious routes can lead to completing " +
+            " the level in a faster time.");
+    }
+
+    public void Usernames()
+    {
+        activeObj.SetActive(false);
+        player.SetActive(true);
+        activeObj = player;
+        explanationText.text = ("Usernames must be unique.");
+    }
+
+    public void Passwords()
+    {
+        activeObj.SetActive(false);
+        player.SetActive(true);
+        activeObj = player;
+        explanationText.text = ("Your password must be at least six digits long, with at least one number, one upper" +
+            " and one lowercase letter.");
     }
 
     public void Return()
